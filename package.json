@@ -1,0 +1,36 @@
+{
+  "name": "tranquility-syntax",
+  "displayName": "Tranquility Syntax",
+  "description": "Provides syntax highlighting and autocompletion for the Tranquility language written by Dr. Stuart of Drexel University",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.71.0"
+  },
+  "categories": [
+    "Programming Languages"
+  ],
+  "contributes": {
+    "languages": [{
+      "id": "tranq",
+      "aliases": ["Tranquility", "tranq"],
+      "extensions": [".t"],
+      "configuration": "./language-configuration.json"
+    }],
+    "grammars": [{
+      "language": "tranq",
+      "scopeName": "source.tranq",
+      "path": "./syntaxes/tranq.tmLanguage.json"
+    }],
+    "semanticTokenScopes": [
+      {
+        "scopes":{
+          "templateType": ["variable.tranq"]
+        }
+      }
+    ],
+    "semanticHighlighting": true,
+    "semanticTokenColors": {
+      "keyword.variable.tranq": "#000000"
+    }
+  }
+}
