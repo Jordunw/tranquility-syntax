@@ -32,5 +32,6 @@
     "semanticTokenColors": {
       "keyword.variable.tranq": "#000000"
     }
-  }
+  },
+  "repository": {"url": "https://github.com/Jordunw/tranquility-syntax.git"}
 }
